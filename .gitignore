@@ -1,4 +1,4 @@
 .idea/
 node_modules/
-vidData/
+public/vidData/
 npm-debug.log
