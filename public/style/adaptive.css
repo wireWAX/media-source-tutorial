@@ -56,10 +56,10 @@ table.ww4-table td {
     vector-effect: non-scaling-stroke;
 }
 .ww4-select {
-    border-radius: 20px;
+    border-radius: 5px;
     height: 40px;
     display: inline-block;
-    border: 1px solid #7bafa8;
+    border: 1px solid #e5e5e5;
     background-color: white;
     cursor: pointer;
     -webkit-transition: all linear 0.3s;
@@ -69,8 +69,9 @@ table.ww4-table td {
     overflow: hidden;
     min-width: 100px;
     padding-left: 25px;
-    color: #989898;
+    color: #7f7f7f;
     min-width: 140px;
+    outline: 0;
 }
 
 .ww4-static-button {
