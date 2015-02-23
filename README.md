@@ -1,2 +1,2 @@
-# media-source-tutorial
-Media Source Extensions Tutorial
+# Media Source Tutorial
+To host locally npm install and then node app.js
