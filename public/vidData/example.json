@@ -1,0 +1,11 @@
+{
+  "type": "video/webm; codecs=\"vp8, vorbis\"",
+  "duration": 30892.000000,
+  "init": { "offset": 0, "size": 4651},
+  "media": [
+    { "offset": 4651, "size": 962246, "timecode": 0.000000 },
+    { "offset": 966897, "size": 660411, "timecode": 9.991000 },
+    { "offset": 1627308, "size": 721264, "timecode": 19.999000 },
+    { "offset": 2348572, "size": 83217, "timecode": 29.984000 }
+  ]
+}

@@ -57,8 +57,8 @@ $(function () {
             xhr.send();
             var cluster = this;
             xhr.onload = function (e) {
-                if (xhr.status != 206) {
-                    console.err("media: Unexpected status code " + xhr.status);
+                if (xhr.status !== 206 && xhr.stats !== 304) {
+                    console.error("media: Unexpected status code " + xhr.status);
                     return false;
                 }
                 cluster.data = new Uint8Array(xhr.response);
@@ -69,7 +69,7 @@ $(function () {
             xhr.ontimeout = function () {
                 var retryAmount = !retryCount ? 0 : retryCount;
                 if (retryCount == 2) {
-                    console.err("Given up downloading")
+                    console.error("Given up downloading")
                 } else {
                     cluster._getClusterData(callback, retryCount++);
                 }
