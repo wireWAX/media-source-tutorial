@@ -2,7 +2,8 @@
   "name": "mediaSourceTutorial",
   "version": "0.0.1",
   "dependencies": {
+    "ejs": "^2.5.5",
     "express": "3.3.4",
-      "request": "~2.22.0"
+    "request": "~2.22.0"
   }
 }

@@ -1,3 +1,6 @@
+exports.index = function(req, res) {
+    res.render('index.html');
+};
 exports.basicPlayer = function(req , res){
 	res.render('basic-player.html');
 };

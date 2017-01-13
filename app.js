@@ -20,7 +20,7 @@ app.configure(function () {
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(app.router);
-    app.use(express.static(path.join(__dirname, 'public')));
+    app.use('/', express.static(path.join(__dirname, 'public')));
     app.engine('html', require('ejs').renderFile);
     app.use(express.errorHandler());
 });
@@ -30,6 +30,7 @@ var server = app.listen(3105);
 exports = module.exports = app;
 
 // Routes
+app.get('/', routes['index']);
 app.get('/basic', routes['basicPlayer']);
 app.get('/buffering', routes['bufferingPlayer']);
 app.get('/adaptive', routes['adaptiveStreamingPlayer']);
